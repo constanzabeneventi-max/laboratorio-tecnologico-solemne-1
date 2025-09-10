@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  </body>
+  <style>
+    .chart .dot{
+            fill: #08e400;
+            opacity: .3;
+            transition: .4s;
+            
+        }
+        .chart .dot:hover{
+            opacity: 1;
+        }
+
+        .country-info{
+            width: 120px;
+            height: 50px;
+            background-color: rgb(191, 236, 182);
+            border: 1px solid rgb(173, 207, 163);
+            border-radius: 2%;
+            opacity: 0;
+            position: absolute;
+            z-index: 1;
+            pointer-events: none;
+            display: flex;
+        }
+
+        .country-info p{
+            color: rgb(0, 46, 4);
+            margin: auto;
+            font-family: Helvetica, Helvetica, sans-serif;
+        }
+  </style>
+    <svg width="1000" height="1000">
+        <g class="chart" transform="translate(100, 30)"></g>
+        <g class="y-axis" transform="translate(100, 45)"></g>
+        <g class="x-axis" transform="translate(100, 545)"></g>
+    </svg>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
